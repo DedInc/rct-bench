@@ -1,0 +1,94 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+env/
+ENV/
+.venv
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.hypothesis/
+*.cover
+.cache
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment variables
+.env
+*.env
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Reference solutions (keep private during development)
+# Uncomment to hide reference solutions:
+# **/reference/solution/**
+
+# Submission directories (for testing)
+submissions/
+results/
+
+# Node.js (for JavaScript/TypeScript tasks)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# JavaScript/TypeScript build output
+dist/
+build/
+*.js.map
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# OS-specific
+Thumbs.db
+desktop.ini
+
+# Evaluation results
+*.json
+!package.json
+!tsconfig.json
