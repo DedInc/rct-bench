@@ -23,51 +23,46 @@ Modern AI coding benchmarks test models on problems that don't reflect reality:
 
 ## Benchmark Categories
 
-RCT-bench is organized into four main categories, each testing different aspects of real-world coding ability.
+RCT-bench covers the full spectrum of real-world development across 4 major categories.
 
-### 🤖 Bots (20 tasks)
-Real bot implementations for Telegram and Discord with actual functionality.
+### 📦 Backend
 
-**Includes:**
-- 10 Telegram bot tasks (aiogram, python-telegram-bot, Telegraf, etc.)
-- 10 Discord bot tasks (discord.py, discord.js, JDA, etc.)
+Server-side development, APIs, databases, services, and backend systems.
 
-**[→ See detailed Bots category documentation](tasks/bots/ABOUT.MD)**
+- **APIs** - REST & GraphQL API design, authentication, rate limiting
+- **Databases** - SQL, NoSQL, ORMs, migrations, optimization
+- **Microservices** - Distributed systems, message queues, service communication
+- **Background Jobs** - Task queues, scheduled jobs, ETL pipelines
+- **Bots** - Telegram & Discord bots, integrations
+- **Machine Learning** - Model deployment, training pipelines, MLOps
+- **Smart Contracts** - Solidity, DeFi, NFTs, blockchain
+- **Reverse Engineering** - Binary analysis, protocol RE, decompilation
+- **Language Rewrites** - Python↔JS, Go↔Rust, cross-language translation
+- **Library Porting** - Framework migrations, version upgrades
+
+### 🎨 Frontend
+
+User interfaces, web applications, and client-side development.
+
+- **Web Frameworks** - React, Vue, Svelte, Next.js, complex UIs
+- **Mobile-Responsive** - Responsive design, PWAs, mobile-first
+- **Browser Automation** - Selenium, Playwright, scraping, E2E testing
+
+### 🛠️ Infrastructure
+
+DevOps, deployment, tooling, and system administration.
+
+- **DevOps & CI/CD** - Docker, Kubernetes, pipelines, IaC
+- **CLI Tools** - Command-line applications, system utilities
+- **Security & Auth** - Authentication, RBAC, encryption
+
+### 🎮 Game Development
+
+Game mechanics, physics, multiplayer systems.
+
+- 2D game development, physics engines, multiplayer synchronization, game state management
 
 ---
-
-### 🔧 Niche Tasks (20 tasks)
-Specialized coding that requires domain-specific knowledge.
-
-**Includes:**
-- 5 LevelDB operations tasks
-- 5 Smart Contracts (Solidity) tasks
-- 5 ML Coding (deployment & pipelines) tasks
-- 5 Reverse Engineering tasks
-
-**[→ See detailed Niche category documentation](tasks/niche/ABOUT.MD)**
-
----
-
-### 🌐 Multilingual (30 tasks)
-The real test of understanding vs. memorization - converting between languages and libraries.
-
-**Includes:**
-- 15 Language Rewrites (Python ↔ JavaScript ↔ Go ↔ Rust, etc.)
-- 15 Library Porting (Express → Fastify, Flask → FastAPI, etc.)
-
-**[→ See detailed Multilingual category documentation](tasks/multilingual/ABOUT.MD)**
-
----
-
-### 💻 Web Development (30 tasks)
-Modern web applications from beautiful interfaces to powerful automation.
-
-**Includes:**
-- 15 Modern Interfaces (React, Vue, Svelte, complex UIs)
-- 15 Browser Automation (Selenium, Playwright, Puppeteer)
-
-**[→ See detailed Web Development category documentation](tasks/web/ABOUT.MD)**
 
 ## Task Structure
 
@@ -185,9 +180,9 @@ See [EVALUATOR_FRAMEWORK.md](docs/EVALUATOR_FRAMEWORK.md) for detailed planning 
 
 ## Example Task: #001 - LaTeX Telegram Bot
 
-**Category:** Bots → Telegram  
+**Category:** Backend → Bots  
 **Difficulty:** Medium  
-**Location:** `tasks/bots/telegram/task-001-latex-renderer/prompt.md`
+**Location:** `tasks/backend/bots/task-001-latex-renderer/prompt.md`
 
 **What the model receives:**
 ```markdown
@@ -222,7 +217,7 @@ This tests real implementation ability with realistic constraints.
 
 ## Contributing
 
-We need your help to reach 100+ tasks! See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines.
+We need your help! See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines.
 
 ### What Makes a Good RCT-bench Task?
 
@@ -243,7 +238,7 @@ We need your help to reach 100+ tasks! See [CONTRIBUTING.md](docs/CONTRIBUTING.m
 ### Phase 1: Core Task Collection (Current)
 - [x] Initial structure and philosophy
 - [x] Documentation and evaluation criteria
-- [x] Creating some tasks for example
+- [x] Organized into 4 major categories
 
 ### Phase 2: Community & Results (Future)
 - [ ] Public leaderboard for model comparisons
@@ -252,17 +247,7 @@ We need your help to reach 100+ tasks! See [CONTRIBUTING.md](docs/CONTRIBUTING.m
 - [ ] Evaluation templates and guidelines for reviewers
 - [ ] Example evaluations and scoring references
 
-## Why This Matters
-
-Current benchmarks don't predict real-world coding ability. A model might ace HumanEval but fail to:
-- Use a real framework correctly
-- Handle async/await patterns
-- Manage dependencies
-- Write production-ready error handling
-- Follow language-specific best practices
-- Port code between paradigms
-
-**RCT-bench tests what matters: Can the model help with actual development work?**
+---
 
 ## License
 
